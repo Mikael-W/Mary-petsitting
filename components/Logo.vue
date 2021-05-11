@@ -11,7 +11,7 @@ export default {
 <style>
 .logo{
   position: absolute;
-  top:0;
+  top:3vh;
   right: 1vw;
   width: 35vw;
   border-radius: 100%;;

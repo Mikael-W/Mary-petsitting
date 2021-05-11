@@ -24,7 +24,7 @@ export default {
     justify-content: center;
     align-items: center;
     width: 90vw;
-    padding: 10vh 5vw;
+    padding: 5vh 5vw;
 }
 h1{
     font-family: 'PumpkinStory', sans-serif;

@@ -5,6 +5,8 @@
     <Header />
     <About />
     <services />
+    <Testimonials />
+    <Footer />
   </div>
 </template>
 
