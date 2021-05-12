@@ -6,12 +6,15 @@
     <About />
     <services />
     <Testimonials />
+    <Instafeed />
     <Footer />
   </div>
 </template>
 
 <script>
-export default {}
+import Instaslide from '../components/Instafeed.vue'
+export default {
+  components: { Instaslide },}
 </script>
 
 <style>
