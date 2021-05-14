@@ -4,11 +4,10 @@
     <div class="testimonial-subtitle">
       découvrez les avis des maîtres qui m'ont fait confiance
     </div>
-    <div class="testimonials-container">
-    <button type="button" class="btn btn-left">
+     <button @click="prev()" type="button" class="btn btn-left">
       <img src="../assets/img/left-arrow.png" class="icone" alt="" />
     </button>
-    <div class="slides-container">
+    <div class="testimonials-container" :style="{transform: `translateX(${index}vw)`, transition:`${transition}`}">
       <div class="slide">
         <img src="../assets/img/photo.png" class="customer-picture" alt="" />
         <span class="customer-name">Client 1</span>
@@ -33,8 +32,6 @@
           corporis laudantium modi. Distinctio, voluptas!"
         </p>
       </div>
-    </div>
-    <div class="slides-container">
       <div class="slide">
         <img src="../assets/img/photo.png" class="customer-picture" alt="" />
         <span class="customer-name">Client 4</span>
@@ -60,10 +57,9 @@
         </p>
       </div>
     </div>
-    <button type="button" class="btn btn-right">
+    <button @click="next()" type="button" class="btn btn-right">
       <img src="../assets/img/right-arrow.png" class="icone" alt="" />
     </button>
-    </div>
   </div>
 </template>
 
@@ -72,8 +68,27 @@ export default {
   data: function () {
     return {
       index: 0,
+      transition: "transform 0.2s ease",
     };
   },
+  methods:{
+      prev(){if(this.index === 0){
+              this.transition = "none";
+              this.index = - 102 ;
+          }else{
+              this.transition = "transform 0.2s ease";
+              this.index += 34 ;
+          }},
+      next(){
+          if(this.index === -102){
+              this.transition = "none";
+              this.index = 0 ;
+          }else{
+              this.transition = "transform 0.2s ease";
+              this.index -= 34 ;
+          }
+      },
+  }
 };
 </script>
 
@@ -81,21 +96,21 @@ export default {
 .testimonial-section {
   background: #7d7c84;
   position: relative;
-  margin-bottom: 2vh;
+  margin:5vh 0 2vh 0;
+  overflow-x:hidden;
 }
 .testimonials-container{
     display: flex;
-    width: 100vw;
+    width: 200vw;
     height: 50vh;
-    overflow:hidden;
+    overflow-x:hidden;
 }
 .testimonial-title {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5vw;
-  margin: 10vh 0 0 0;
-  padding-top: 3vh;
+  margin: 3vh 0 0 0;
   font-family: "PumpkinStory", sans-serif;
   color: #fcacdf;
 }
@@ -117,7 +132,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  width: 30vw;
   margin: 0 2vw;
 }
 .customer-picture {
@@ -156,6 +171,7 @@ export default {
   align-items: center;
   background: #fcacdf;
   padding: 0;
+  cursor: pointer;
 }
 .btn-left {
   top: 50%;
