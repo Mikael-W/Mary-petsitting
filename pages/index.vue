@@ -6,21 +6,17 @@
     <About />
     <services />
     <Testimonials />
+    <quotationLink />
     <Instafeed />
     <Footer />
   </div>
 </template>
 
 <script>
-import Instaslide from '../components/Instafeed.vue'
-export default {
-  components: { Instaslide },}
+export default {}
 </script>
 
 <style>
 .container {
   min-height: 100vh;
-}
-
-
-</style>
+}</style>

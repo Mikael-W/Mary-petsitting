@@ -5,22 +5,26 @@
       <div class="tags-container">
           <div class="tag">
               <div class="tag-img">
-              <img class="tag-picture" src="../assets/img/home.png"/>
+              <img class="tag-picture" src="../assets/img/dog-iconW.png"/>
               </div>
-              <span class="tag-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quod perspiciatis sequi voluptate quos animi.
+              <span class="tag-description">Visite à votre domicile une à plusieurs fois par jour, sur une journée, un week-end ou long séjour, en
+fonction des besoins de votre loulou accompagnée d’une balade en extérieur, des moments de câlins
+et de jeux.
               </span>
           </div>
           <div class="tag">
               <div class="tag-img">
-              <img class="tag-picture" src="../assets/img/leash.png"/>
+              <img class="tag-picture" src="../assets/img/happyW.png"/>
               </div>
-              <span class="tag-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero enim fugiat mollitia! Obcaecati, unde quas.</span>
+              <span class="tag-description">Visites à votre domicile une à plusieurs fois par jour, sur une journée, un week-end ou long séjour,
+selon son mode de vie et ses habitudes, détente, câlins et moments de jeux seront mis à profit.</span>
           </div>
           <div class="tag">
               <div class="tag-img">
-              <img class="tag-picture" src="../assets/img/camera.png"/>
+              <img class="tag-picture" src="../assets/img/photo-cameraW.png"/>
               </div>
-              <span class="tag-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita magni dicta earum nisi deserunt beatae.</span>
+              <span class="tag-description">A chacune de mes visites, je vous envoie des photos et vidéos de votre protégé et vous donne de ses
+nouvelles. Je suis joignable 24h sur 24 et 7jours /7.</span>
           </div>
       </div>
   </div>
@@ -66,19 +70,19 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 20vw;
+    height: 20vw;
+    background: #7d7c84;
     margin-bottom: 5vh;
-    border: 20px solid #FCACDF;
-    border-radius: 50%;
+    border-radius: 2rem;
 
 }
 .tag-picture{
-    width: 150px;
-    height: 150px;
+    width: 10vw;
 }
 .tag-description{
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.8vw;
+    font-family: "poppins", sans-serif;
 }
 </style>
