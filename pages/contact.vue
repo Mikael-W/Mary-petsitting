@@ -3,6 +3,7 @@
       <Menu />
       <Logo />
       <Header />
+      <FormContact />
       <Footer />
   </div>
 </template>

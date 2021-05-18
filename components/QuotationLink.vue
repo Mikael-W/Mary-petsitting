@@ -2,11 +2,12 @@
   <div class="quotation-section">
     <span class="quotation-title"> Besoin d'un devis ? </span>
     <p class="quotation-texte">
-      Un week end ? Un voyage ? Une absence de dernière minute ? Je serais ravis
-      de répondre à vos besoins
+      Pour toutes demandes spécifiques et questions, n'hésitez pas à me
+        contacter par téléphone au 06.10.87.14.38 ou via la page
+        Contact.
     </p>
     <NuxtLink type="button" class="quotation-page_btn" to="/prices"
-      >Demander un devis</NuxtLink
+      >Contact</NuxtLink
     >
   </div>
 </template>
@@ -26,13 +27,15 @@ export default {};
 .quotation-title {
   font-family: "PumpkinStory", sans-serif;
   font-size: 5vw;
-  margin-bottom: 2vw;
+  padding: 2vw;
   color: #fcacdf;
 }
 .quotation-texte {
   font-family: "poppins", sans-serif;
-  font-size: 1.5vw;
+  text-align: center;
+  font-size: 2vw;
   padding: 2vw;
+  line-height: 3vw;
 }
 .quotation-page_btn {
   display: flex;

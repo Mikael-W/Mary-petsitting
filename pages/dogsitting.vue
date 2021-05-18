@@ -3,6 +3,7 @@
       <Menu />
       <Logo />
       <Header />
+      <Footer />
   </div>
 </template>
 
@@ -13,5 +14,7 @@ export default {
 </script>
 
 <style>
-
+.container {
+  min-height: 100vh;
+}
 </style>

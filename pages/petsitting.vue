@@ -4,6 +4,7 @@
       <Logo />
       <Header />
       <IncludeServices />
+      <Footer />
   </div>
 </template>
 

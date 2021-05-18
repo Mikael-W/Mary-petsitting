@@ -9,7 +9,7 @@
       </ul>
       </li>
       <li><NuxtLink class="link" to="/prices">Tarifs</NuxtLink></li>
-      <li><NuxtLink class="link" to="/quotation">Demande de devis</NuxtLink></li>
+      <li><NuxtLink class="link" to="/contact">Contact</NuxtLink></li>
     </ul>
   </nav>
 </template>
