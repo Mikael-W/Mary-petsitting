@@ -2,7 +2,7 @@
   <div class="services-section">
     <div class="services-section_title">Tarifs 2021</div>
     <div class="includes-services">
-      <span class="prices-title">Inclus dans les tarifs</span>
+      <span class="prices-title">Inclus dans mes tarifs</span>
       <ul>
         <li>La pré visite</li>
         <li>Pas de supplément le dimanche ni les jours fériés</li>
@@ -20,11 +20,6 @@
         garde signé en 2 exemplaires. Nous verrons ensemble les conditions
         générales et la fiche de renseignement pour chaque animal avec vos
         demandes.
-      </p>
-      <p class="services-infos">
-        Pour toutes demandes spécifiques et questions, n'hésitez pas à me
-        contacter par téléphone au 06.10.87.14.38 ou envoyez moi un mail dans
-        Contact.
       </p>
     </div>
   </div>
@@ -56,7 +51,7 @@ export default {};
   font-size: 2.5vw;
   background: #7D7C84;
   color: white;
-  padding: 2vw;
+  padding: 2vw 0;
   font-family: "poppins", sans-serif;
   font-weight: bold;
 }

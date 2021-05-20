@@ -3,6 +3,8 @@
       <Menu />
       <Logo />
       <Header />
+      <CatService />
+      <QuotationLink />
       <Footer />
   </div>
 </template>

@@ -3,7 +3,8 @@
       <Menu />
       <Logo />
       <Header />
-      <IncludeServices />
+      <VisitSelection />
+      <QuotationLink />
       <Footer />
   </div>
 </template>

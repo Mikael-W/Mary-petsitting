@@ -1,12 +1,12 @@
 <template>
   <div class="quotation-section">
-    <span class="quotation-title"> Besoin d'un devis ? </span>
+    <span class="quotation-title"> Des questions ou demandes de devis ? </span>
     <p class="quotation-texte">
       Pour toutes demandes spécifiques et questions, n'hésitez pas à me
         contacter par téléphone au 06.10.87.14.38 ou via la page
         Contact.
     </p>
-    <NuxtLink type="button" class="quotation-page_btn" to="/prices"
+    <NuxtLink type="button" class="quotation-page_btn" to="/contact"
       >Contact</NuxtLink
     >
   </div>

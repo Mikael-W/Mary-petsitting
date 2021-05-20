@@ -7,47 +7,36 @@
         vous propose :
       </span>
       <ul class="services-list">
-        <li>- Relever votre courrier</li>
-        <li>- L’arrosage de vos plantes</li>
-        <li>- L’aération de votre maison</li>
-        <li>- Ouvrir et fermer vos volets</li>
-        <li>- Sortir et rentrer vos poubelles</li>
-        <li>- Pas de supplément le dimanche ni les jours fériés</li>
-        <li>- L’annulation de la garde au dernier moment</li>
-        <li>- Les animaux supplémentaires</li>
+        <li>Relever votre courrier</li>
+        <li>L’arrosage de vos plantes</li>
+        <li>L’aération de votre maison</li>
+        <li>Ouvrir et fermer vos volets</li>
+        <li>Sortir et rentrer vos poubelles</li>
+        <li>Pas de supplément le dimanche ni les jours fériés</li>
+        <li>L’annulation de la garde au dernier moment</li>
+        <li>Les animaux supplémentaires</li>
       </ul>
-      <p class="services-textes">
+      <div class="visit-container">
+          <img class="visit-container_picture" src="../assets/img/dogsitting.jpg" alt="dogsitter">
+        <p class="services-textes">
         La pré-visite est également gratuite, ce moment d’échange va nous
         permettre de se rencontrer et de faire connaissance ainsi qu’avec votre
         loulou. On peut, lors de ce 1 er rdv, procéder à la remise des clés et
         établir le contrat de garde.
       </p>
-      <p class="services-textes">
+      </div>
+      <p class="services-textes no-key">
         Si un autre rendez-vous doit être convenu pour la remise des clés avant
         la prestation, les frais de déplacement seront facturés.
       </p>
-      <p class="services-textes">
+      <div class="visit-container">
+        <p class="services-textes">
         Je serais à votre écoute pour vos besoins, vos attentes, vos demandes
         concernant la garde votre poilu. Je pourrais ainsi connaître davantage
         ses habitudes, son environnement et si problèmes médicaux il y a.
       </p>
-      <span class="description-title">Au cours de ma visite canine d’environ 1h :</span>
-      <ul class="services-list">
-        <li>- Je m’occupe de leur repas</li>
-        <li>- De toujours mettre de l’eau propre à disposition</li>
-        <li>
-          - De faire une balade à chaque visite et à son rythme, selon ses
-          besoins et vos souhaits
-        </li>
-        <li>- Des moments de câlins, de détente, de jeux</li>
-        <li>- Du nettoyage des gamelles</li>
-        <li>
-          - De leurs soins journaliers, de leurs soins médicaux uniquement sur
-          ordonnance vétérinaire
-        </li>
-        <li>- D’entretenir son environnement</li>
-        <li>- De vous envoyer des nouvelles en photos et vidéos</li>
-      </ul>
+          <img class="visit-container_picture" src="../assets/img/catsitting.jpg" alt="catsitter">
+      </div>
     </div>
   </div>
 </template>
@@ -58,16 +47,71 @@ export default {};
 
 <style>
 .include-services_title{
+    width: 100vw;
+    text-align: center;
+    padding: 2vw 0;
     font-family: "PumpkinStory", sans-serif;
-    font-size: 5vw;
+    font-size: 6vw;
     color: #fcacdf;
 }
+.include-services_description{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .description-title{
+    width: 100vw;
+    text-align: center;
     font-size: 2vw;
+    padding: 2vw 0;
+    background: #7D7C84;
+    color:white;
     font-family: "poppins", sans-serif;
 }
-.services-list, .services-textes{
+.services-list{
+    display: flex;
+    flex-direction: column;
     font-size: 1.5vw;
+}
+.services-list li{
+  font-size: 2vw;
+  padding-top: 1.5vw;
+  font-family: "poppins", sans-serif;
+}
+.services-list li::before{
+  content: "\2022";
+  color: #fcacdf;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1.2vw;
+}
+.services-textes{
+  width: 58vw;
+  font-size: 2vw;
+  padding: 2vw;
+  text-align: center;
+  color: white;
+  font-family: "poppins",sans-serif;
+}
+.no-key{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7E52A0;
+  background: white;
+  height: 15vw;
+  font-weight: bold;
+}
+.visit-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+  background: #7D7C84;
+}
+.visit-container_picture{
+  width: 40vw;
 }
 
 </style>

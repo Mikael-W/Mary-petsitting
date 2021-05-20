@@ -3,7 +3,7 @@
       <Menu />
       <Logo />
       <Header />
-      <DogService />
+      <IncludeServices />
       <QuotationLink />
       <Footer />
   </div>
