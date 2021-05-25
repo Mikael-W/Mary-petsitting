@@ -90,6 +90,8 @@
         <p class="article-text">Mary.</p>
       </article>
     </div>
+    <QuotationLink />
+    <Footer />
   </div>
 </template>
 

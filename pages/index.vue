@@ -7,7 +7,6 @@
     <services />
     <Testimonials />
     <quotationLink />
-    <Instafeed />
     <Footer />
   </div>
 </template>
