@@ -1,11 +1,10 @@
-const config = require('./.contentful.json')
 import dotenv from "dotenv"; dotenv.config();
 
 export default {
   env: {
-    CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
-    CONTENTFUL_ACCESSTOKEN: process.env.CONTENTFUL_ACCESSTOKEN,
-    CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT
+    CONTENTFUL_SPACE: process.env.CTF_SPACED_ID,
+    CONTENTFUL_ACCESSTOKEN: process.env.CTF_CDA_TOKEN,
+    CONTENTFUL_ENVIRONMENT: process.env.CTF_ENVIRONMENT
   },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
@@ -35,7 +34,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
+  plugins: ["~/plugins/contentful", "~/plugins/posts"
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,6 +46,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/markdownit'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
