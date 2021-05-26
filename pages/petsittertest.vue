@@ -12,29 +12,22 @@
 </template>
 
 <script>
-  import {createClient} from '~/plugins/contentful.js'
-
-  const client = createClient()
-
+  import {createClient} from '../plugins/contentful';
+  const contentfulClient = createClient();
   export default {
-    // `env` is available in the context object
-    asyncData ({env}) {
-      return Promise.all([
-        // fetch the owner of the blog
-        client.getEntries({
-          'sys.id': env.CTF_PERSON_ID
-        }),
-        // fetch all blog posts sorted by creation date
-        client.getEntries({
-          'content_type': env.CTF_BLOG_POST_TYPE_ID,
-          order: '-sys.createdAt'
-        })
-      ]).then(([entries, posts]) => {
-        // return data that should be available
-        // in the template
+    name: 'index',
+    
+    mounted(){
+      console.log(process.env.CTF_CDA_TOKEN)
+    },
+
+    asyncData ({ env, params }) {
+      return contentfulClient.getEntries({
+        'content_type': 'blogPost',
+        'fields.slug': params.id
+      }).then(page => {
         return {
-          person: entries.items[0],
-          posts: posts.items
+          page: page.items[0]
         }
       }).catch(console.error)
     }
