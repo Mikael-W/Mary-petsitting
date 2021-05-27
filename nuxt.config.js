@@ -45,11 +45,22 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxtjs/markdownit'
-  ],
-
+  modules: ["@nuxtjs/markdownit"],
+  markdownit: {
+  injected: true
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  generate: {
+    routes() {
+      return Promise.all([
+        client.getEntries({
+          content_type: "blogPost"
+        })
+      ]).then(([blogEntries]) => {
+        return [...blogEntries.items.map(entry => entry.fields.slug)];
+      });
+    }
+   }
 }

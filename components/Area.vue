@@ -4,6 +4,7 @@
     <div class="zone-container">
       <div class="zone-a">
         <span class="area-title">ZONE A</span>
+        <span class="area-title">30km maximum</span>
         <img
           class="area-picture"
           src="../assets/img/zone-a.png"
@@ -13,26 +14,26 @@
           <div class="dog">
               <span>Chien</span>
             <div class="dog-prices">   
-            <div class="dog-prices_infos">
-              <span>1 visite / jour</span>
-              <span>14€</span>
+            <div class="dog-prices_container">
+              <span class="dog-prices_infos">1 visite / jour</span>
+              <span class="dog-prices_infos">17€</span>
             </div>
-            <div class="dog-prices_infos">
-              <span>2 visites / jour</span>
-              <span>19€</span>
+            <div class="dog-prices_container">
+              <span class="dog-prices_infos">2 visites / jour</span>
+              <span class="dog-prices_infos">22€</span>
             </div>
             </div>
           </div>
           <div class="cat">
             <span>Chat</span>
             <div class="cat-prices">
-                <div class="cat-prices_infos">
-              <span>1 visite / jour</span>
-              <span>17€</span>
+                <div class="cat-prices_container">
+              <span class="cat-prices_infos">1 visite / jour</span>
+              <span class="cat-prices_infos">14€</span>
                 </div>
-            <div class="cat-prices_infos">
-              <span>2 visites / jour</span>
-              <span>22€</span>
+            <div class="cat-prices_container">
+              <span class="cat-prices_infos">2 visites / jour</span>
+              <span class="cat-prices_infos">19€</span>
             </div>
             </div>
           </div>
@@ -40,6 +41,7 @@
       </div>
       <div class="zone-b">
         <span class="area-title">ZONE B</span>
+        <span class="area-title">40km maximum</span>
         <img
           class="area-picture"
           src="../assets/img/zone-b.png"
@@ -50,26 +52,26 @@
           <div class="dog">
               <span>Chien</span>
             <div class="dog-prices">
-            <div class="dog-prices_infos">
-              <span>1 visite / jour</span>
-              <span>17€</span>
+            <div class="dog-prices_container">
+              <span class="dog-prices_infos">1 visite / jour</span>
+              <span class="dog-prices_infos">19€</span>
             </div>
-            <div class="dog-prices_infos">
-              <span>2 visites / jour</span>
-              <span>22€</span>
+            <div class="dog-prices_container">
+              <span class="dog-prices_infos">2 visites / jour</span>
+              <span class="dog-prices_infos">25€</span>
             </div>
             </div>
           </div>
           <div class="cat">
             <span>Chat</span>
             <div class="cat-prices">
-            <div class="cat-prices_infos">
-              <span>1 visite / jour</span>
-              <span>19€</span>
+            <div class="cat-prices_container">
+              <span class="cat-prices_infos">1 visite / jour</span>
+              <span class="cat-prices_infos">17€</span>
             </div>
-            <div class="cat-prices_infos">
-              <span>2 visites / jour</span>
-              <span>25€</span>
+            <div class="cat-prices_container">
+              <span class="cat-prices_infos">2 visites / jour</span>
+              <span class="cat-prices_infos">22€</span>
             </div>
             </div>
           </div>
@@ -124,13 +126,16 @@ export default {};
 }
 .dog, .cat{
     display:flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     width:100%;
     font-size: 1.5vw;
-    padding:2vw 1vw 0 0;
+    margin:2vw 0;
+    padding: 2vw 0;
+    background: #fcacdf;
     color:#fbfbfb;
-     font-weight:bold;
+    border-radius: 20%;
+    font-weight:bold;
 }
 .dog-prices, .cat-prices{
     display: flex;
@@ -142,7 +147,8 @@ export default {};
     color:#fbfbfb;
    
 }
-.cat-prices_infos,.dog-prices_infos{
-    font-weight:initial;
+.dog-prices_container, .cat-prices_container{
+  margin: 0.5vw 0;
+  font-weight:initial;
 }
 </style>

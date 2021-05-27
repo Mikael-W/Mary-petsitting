@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/freeservices", {data:[{}],fetch:{},mutations:[]});

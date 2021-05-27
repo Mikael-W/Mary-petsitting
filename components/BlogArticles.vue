@@ -1,46 +1,95 @@
 <template>
-  <div class="articles-selection_container">
-      <div class="article">
-        <span class="article-title">Pourquoi choisir un petsitter ?</span>
-      <NuxtLink class="article-link" to="/petsitter">
-      <img class="link-picture" src="../assets/img/petsitter.jpeg" alt="petsitter nantes">
-      </NuxtLink>
-      </div>
-  </div>
+  <section class="blog-section">
+    <h1>Blog</h1>
+    <div class="blog-selection_container">
+      <article
+        v-for="post in posts"
+        :key="post.fields.Name"
+        class="articles-selection_container"
+      >
+        <nuxt-link :to="post.fields.slug">
+          <img class="image" :src="post.fields.heroImage.fields.file.url" />
+        </nuxt-link>
+        <h2>
+          <nuxt-link class="blog-link" :to="post.fields.slug">{{
+            post.fields.title
+          }}</nuxt-link>
+        </h2>
+
+        <p class="description">
+          {{ post.fields.description }}
+        </p>
+        <nuxt-link :to="post.fields.slug" class="more"
+          >En savoir plus ⟶</nuxt-link
+        >
+      </article>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-
-}
+  computed: {
+    posts() {
+      return this.$store.state.posts;
+    },
+  },
+  head: {
+    title: "Mary-petsitting blog",
+  },
+};
 </script>
 
 <style>
-.articles-selection_container{
-    width: 96vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2vw 2vw;
-}
-.articles{
-    grid-column-start: 1;
-}
-.article-title{
-    display: block;
+.blog-section{
     text-align: center;
-     font-family: "PumpkinStory", sans-serif;
-    font-size: 2.5vw;
-    color: #fcacdf;
-    padding: 2vw;
 }
-.selection-link{
-    height: 30vw;
+.blog-selection_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
 }
-.link-picture{
-    height: 30vw;
-    width: 25vw;
-    border-radius: 2rem;
+.articles-selection_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  width: 33vw;
+  padding: 2vw 0;
+}
+h1 {
+  font-family: "PumpkinStory", sans-serif;
+  font-size: 5vw;
+  color: #fcacdf;
+  padding: 2vw 0;
+}
+h2{
+    margin: 2vw 0;
+}
+.blog-link {
+  font-family: "PumpkinStory", sans-serif;
+  font-size: 2.5vw;
+  text-decoration: none;
+  color: #fcacdf;
+}
+.selection-link {
+  height: 30vw;
+}
+.image {
+  height: 30vw;
+  width: 25vw;
+  border-radius: 2rem;
+}
+.description {
+  width: 80%;
+  font-family: "poppins", sans-serif;
+  font-size: 1vw;
+  padding-bottom: 1.5vw;
+}
+.more {
+  font-family: "PumpkinStory", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fcacdf;
+  font-size: 1.5vw;
 }
 </style>

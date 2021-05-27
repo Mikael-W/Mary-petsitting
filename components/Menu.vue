@@ -2,7 +2,7 @@
   <nav>
     <ul class="menu">
       <li><NuxtLink class="link" to="/">Accueil</NuxtLink></li>
-      <li><NuxtLink class="link" to="/petsittertest">Blog</NuxtLink>
+      <li><NuxtLink class="link" to="/blog">Blog</NuxtLink>
       <li class="dropdown"><NuxtLink class="link" to="/petsitting">Visites à domiciles</NuxtLink>
       <ul class="sub-tabs">
         <li><NuxtLink class="link" to="/dogsitting">Chien</NuxtLink></li>

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/petsitter", {data:[{}],fetch:{},mutations:void 0});
