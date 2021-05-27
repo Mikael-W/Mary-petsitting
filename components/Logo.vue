@@ -17,4 +17,15 @@ export default {
   border-radius: 100%;;
   background: white;
 }
+@media (max-width: 767px){
+  .logo{
+  position: absolute;
+  top:0vh;
+  left:50%;
+  transform: translateX(-50%);
+  width: 45vw;
+  border-radius: 100%;;
+  background: white;
+}
+}
 </style>

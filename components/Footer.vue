@@ -24,8 +24,8 @@
           <li class="footer-li">06.10.87.14.38</li>
       </ul>
       <div class="social-links">
-          <a href=""><img class="social-icon" src="../assets/img/instalogo.png" alt=""></a>
-          <a href=""><img class="social-icon" src="../assets/img/fb-iconW.png" alt=""></a>
+          <a href="https://www.instagram.com/mary_petsitting/"><img class="social-icon" src="../assets/img/instalogo.png" alt=""></a>
+          <a href="https://www.facebook.com/Mary-petsitting-101150668833607"><img class="social-icon" src="../assets/img/fb-iconW.png" alt=""></a>
       </div>
       </div>
       </div>
