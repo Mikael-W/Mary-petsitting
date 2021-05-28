@@ -21,15 +21,18 @@
     </nav>
     </div>
     <div class="mobile-menu">
-      <div id="webapp_cover">
-        <div id="menu_button">
-          <input type="checkbox" id="menu_checkbox" />
-          <label for="menu_checkbox" id="menu_label">
-            <div id="menu_text_bar"></div>
+      
+      <div @click="displayMenu = true" id="webapp_cover">
+        <div role=button
+        @click="displayMenu = false"
+          id="menu_button">
+          <input  type="checkbox" id="menu_checkbox" />
+          <label  for="menu_checkbox" id="menu_label">
+            <div  id="menu_text_bar"></div>
           </label>
         </div>
       </div>
-      <nav class="mobile-nav">
+      <nav v-if="displayMenu" class="mobile-nav">
         <NuxtLink class="mobile-link" to="/">Accueil</NuxtLink>
         <NuxtLink class="mobile-link" to="/blog">Blog</NuxtLink>
         <NuxtLink class="mobile-link" to="/petsitting"
@@ -46,7 +49,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return {
+      displayMenu :false
+    }
+  },
+  methods: {
+    
+    
+  }
+};
 </script>
 
 <style>
@@ -243,7 +256,6 @@ nav > ul li:hover .sub-tabs {
 }
 .mobile-nav {
   position: fixed;
-  bottom:100%;
   width: 100vw;
   height: 100vh;
   background: white;

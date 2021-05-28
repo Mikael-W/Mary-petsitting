@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/dogsitting", {data:[{}],fetch:{},mutations:[]});
