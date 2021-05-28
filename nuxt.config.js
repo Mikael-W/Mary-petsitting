@@ -11,10 +11,6 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  // Correction netlify 404
-  generate: {
-    fallback: true
-  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'mary',
@@ -56,14 +52,6 @@ export default {
   build: {
   },
   generate: {
-    routes() {
-      return Promise.all([
-        client.getEntries({
-          content_type: "blogPost"
-        })
-      ]).then(([blogEntries]) => {
-        return [...blogEntries.items.map(entry => entry.fields.slug)];
-      });
-    }
-   }
+    fallback: true
+  }
 }
