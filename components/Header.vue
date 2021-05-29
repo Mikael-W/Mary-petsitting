@@ -12,6 +12,5 @@
 }
 .banner{
   width: 100vw;
-  height: 75vh;
 }
 </style>
