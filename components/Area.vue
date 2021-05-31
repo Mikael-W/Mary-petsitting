@@ -151,4 +151,23 @@ export default {};
   margin: 0.5vw 0;
   font-weight:initial;
 }
+@media (max-width:767px){
+  .zone-container {
+  flex-direction: column;
+}
+.area-picture {
+  width:85vw;
+}
+.prices{
+    width:45vw;
+}
+.dog, .cat{
+  height:35vw;
+  justify-content: center;
+  font-size: 4.5vw;
+}
+  .dog-prices, .cat-prices{
+    font-size: 4vw;
+  }
+}
 </style>

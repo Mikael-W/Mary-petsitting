@@ -1,10 +1,14 @@
 <template>
   <div class="logo-section">
   <div class="logo-mobile_container">
+    <div class="logo-mobile_social">
     <a href="https://www.facebook.com/Mary-petsitting-101150668833607"><img class="header-icons" src="../assets/img/fb-iconP.png" alt=""></a>
     <a href="https://www.instagram.com/mary_petsitting/"><img class="header-icons" src="../assets/img/instalogoP.png" alt=""></a>
-    <a href="https://www.instagram.com/mary_petsitting/" class="header-icons mail">@</a>
-
+    </div>
+    <div class="logo-mobile_contact">
+    <NuxtLink to="contact" class="header-icons mail">@</NuxtLink>
+    <a href="tel:+33610871438"><img class="header-icons" src="../assets/img/tel-iconP.png" alt=""></a>
+    </div>
   </div>
   <img class="logo" src="../assets/img/logo.png" alt="Mary au service de vos animaux">
   </div>
@@ -32,7 +36,7 @@ export default {
   .logo-mobile_container{
   display:block;
   display:flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   background: white;
   width: 100vw;
@@ -41,8 +45,9 @@ export default {
   .logo{
   position: absolute;
   top:0vh;
-  right:2vw;
-  width: 15vw;
+  right:50%;
+  transform: translateX(50%);
+  width: 23vw;
   border-radius: 100%;;
   background: white;
 }
@@ -51,7 +56,7 @@ export default {
   padding: 0 3vw;
 }
 .mail{
-  font-size: 6vw;
+  font-size: 5.6vw;
   padding: 0 1.5vw;
   color:#fcacdf;
   text-decoration: none;

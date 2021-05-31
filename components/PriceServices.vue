@@ -39,7 +39,7 @@ export default {};
 }
 .services-section_title{
   font-family: "PumpkinStory", sans-serif;
-  font-size: 7vw;
+  font-size: 6.5vw;
   padding: 2vw;
   color: #fcacdf;
 }
@@ -91,5 +91,20 @@ export default {};
    padding: 2vw;
   font-family: "poppins", sans-serif;
 }
-
+@media (max-width:767px){
+  .includes-services li{
+  font-size: 3.5vw;
+}
+  .includes-services li::before{
+  padding-right: 1vw;
+}
+  .services-infos{
+  font-size: 4vw;
+  line-height: 5vw;
+}
+  .km-charges{
+  font-size: 4vw;
+  text-align: center;
+}
+}
 </style>

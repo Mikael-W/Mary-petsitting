@@ -45,4 +45,19 @@ export default {
     width: 25vw;
     border-radius: 2rem;
 }
+@media (max-width:767px){
+    .visit-selection_container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+    .selection-title{
+    font-size: 6.5vw;
+}
+    .link-picture{
+    height: 80vw;
+    width: 80vw;
+    border-radius: 2rem;
+}
+}
 </style>

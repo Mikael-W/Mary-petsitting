@@ -77,4 +77,33 @@ textarea{
   font-family: "poppins", sans-serif;
   font-size: 1.5vw;
 }
+@media (max-width:767px){
+  .contact-section{
+    height: 90vw;
+  }
+  .contact-title{
+  font-size: 6.5vw;
+}
+  .contact-form{
+  width: 70vw;
+}
+  label{
+  font-size: 5vw;
+}
+input {
+  height: 5vw;
+  margin: 1vw 0;
+}
+textarea{
+  min-height: 30vw;
+  font-size: 4vw;
+}
+.submit-btn{
+  width: 50vw;
+  height: 10vw;
+  font-size: 4vw;
+  font-family: "poppins", sans-serif;
+  color: white;
+}
+}
 </style>

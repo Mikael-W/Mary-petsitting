@@ -102,4 +102,37 @@ article p{
 .article-text{
     padding: 2vw 0;
 }
+@media (max-width:767px){
+  article {
+  font-size: 4vw;
+}
+.article-section{
+  margin-bottom:25vw;
+}
+h1 {
+  font-size: 6.5vw;
+}
+article ul {
+  width: 90vw;
+  font-size: 4vw;
+}
+article ul li {
+  width: 90vw;
+  font-size: 4vw;
+}
+article li::before {
+  padding-right: 1vw;;
+}
+article h3{
+  font-size: 4vw;
+}
+article p{
+    padding: 5vw 0;
+    font-family: "poppins", sans-serif;
+}
+.back{
+    font-size: 3vw;
+
+}
+}
 </style>

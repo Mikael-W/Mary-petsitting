@@ -53,8 +53,8 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-  width: 33vw;
-  padding: 2vw 0;
+    width: 33vw;
+    padding: 2vw 0;
 }
 h1 {
   font-family: "PumpkinStory", sans-serif;
@@ -91,5 +91,28 @@ h2{
   cursor: pointer;
   color: #fcacdf;
   font-size: 1.5vw;
+}
+@media (max-width:767px){
+  h1 {
+  font-size: 6.5vw;
+}
+  .blog-selection_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width:100vw;
+}
+.image {
+  height: 75vw;
+  width: 75vw;
+}
+.blog-link {
+  font-size: 5vw;
+}
+.description, .more {
+  width: 100%;
+  font-size: 3.5vw;
+}
 }
 </style>

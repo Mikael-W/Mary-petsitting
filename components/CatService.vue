@@ -82,4 +82,19 @@ h1 {
     height: 6vw;
     background: #7D7C84;
 }
+@media (max-width:767px){
+    .services-container{
+    flex-direction: column;
+}
+    .services-container_picture{
+    width: 100vw;
+}
+    .cat-services_list{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    padding: 5vw 2.5vw; 
+    font-size: 4vw;
+}
+}
 </style>

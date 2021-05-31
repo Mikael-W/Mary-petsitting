@@ -51,6 +51,9 @@ export default {};
   color: white;
 }
 @media (max-width:767px){
+  .quotation-section {
+  height:60vw;
+}
   .quotation-title {
   font-size: 6.5vw;
   padding: 2vw;
@@ -61,17 +64,10 @@ export default {};
   line-height: 5vw;
 }
 .quotation-page_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 6.5vw;
+  font-size: 5vw;
   width: 50vw;
   height: 10vw;
-  margin: 3vw;
-  border-radius: 2vw;
-  background: #fcacdf;
-  text-decoration: none;
-  color: white;
+  font-family: "poppins", sans-serif;
 }
 }
 </style>

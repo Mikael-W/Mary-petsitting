@@ -29,7 +29,7 @@
         Si un autre rendez-vous doit être convenu pour la remise des clés avant
         la prestation, les frais de déplacement seront facturés.
       </p>
-      <div class="visit-container">
+      <div class="visit-container cat">
         <p class="services-textes">
         Je serais à votre écoute pour vos besoins, vos attentes, vos demandes
         concernant la garde votre poilu. Je pourrais ainsi connaître davantage
@@ -72,7 +72,6 @@ export default {};
 .services-list{
     display: flex;
     flex-direction: column;
-    font-size: 1.5vw;
 }
 .services-list li{
   font-size: 2vw;
@@ -113,5 +112,44 @@ export default {};
 .visit-container_picture{
   width: 40vw;
 }
-
+@media (max-width:767px){
+  .visit-container{
+  width:100vw;
+  flex-direction: column;
+  margin: 5vw 0;
+}
+  .visit-container_picture{
+  width: 100vw;
+}
+.include-services_title{
+    font-size: 6.5vw;
+}
+.cat{
+  flex-direction: column-reverse;
+}
+.services-list li{
+  font-size: 3.5vw;
+  padding-top: 1.5vw;
+  font-family: "poppins", sans-serif;
+}
+.services-list li::before{
+  padding-right: 1vw;
+}
+.services-textes{
+  font-size: 4vw;
+  padding: 2vw;
+  text-align: center;
+  color: white;
+  font-family: "poppins",sans-serif;
+}
+.no-key{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7E52A0;
+  background: white;
+  height: 15vw;
+  font-weight: bold;
+}
+}
 </style>
