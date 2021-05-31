@@ -100,7 +100,7 @@ export default {
     width: 30vw;
 }
 .tag-description{
-    width:90vw;
+    width:85vw;
     font-size: 4vw;
 }
 .services-subtitle{

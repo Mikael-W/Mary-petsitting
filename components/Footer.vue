@@ -130,14 +130,17 @@ footer{
 }
     .social-icon{
     width: 3vw;
+    margin-bottom: 2vw;
+
 }
 .copyright{
     position: absolute;
     bottom:20vw;
-    width: 100%;
+    width: 95vw;
     text-align: center;
     color: white;
     padding: 0 2vw;
+    margin-bottom: 2vw;
     font-size: 2vw;
 }
 .author-link{

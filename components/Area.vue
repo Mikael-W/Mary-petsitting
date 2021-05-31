@@ -158,6 +158,9 @@ export default {};
 .area-picture {
   width:85vw;
 }
+.area-title {
+  font-size: 4vw;
+}
 .prices{
     width:45vw;
 }
@@ -169,5 +172,8 @@ export default {};
   .dog-prices, .cat-prices{
     font-size: 4vw;
   }
+  .area-section_title {
+  font-size: 6.5vw;
+}
 }
 </style>

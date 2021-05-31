@@ -93,12 +93,13 @@ export default {};
 }
 @media (max-width:767px){
   .includes-services li{
-  font-size: 3.5vw;
+  font-size: 4vw;
 }
   .includes-services li::before{
   padding-right: 1vw;
 }
   .services-infos{
+  width:90%;
   font-size: 4vw;
   line-height: 5vw;
 }

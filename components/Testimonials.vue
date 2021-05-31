@@ -244,6 +244,7 @@ export default {
   display: flex;
   align-items: flex-start;
   width: 490vw;
+  height:auto;
   transform: none;
 }
 .testimonial-container {
@@ -268,7 +269,7 @@ export default {
   padding-bottom: 2vw;;
 }
 .customer-comment {
-  width: 70%;
+  width: 80%;
   text-align: center;
   font-size: 3vw;
 }

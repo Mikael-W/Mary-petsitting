@@ -65,6 +65,7 @@ export default {};
 }
 .quotation-page_btn {
   font-size: 5vw;
+  font-weight: bold;
   width: 50vw;
   height: 10vw;
   font-family: "poppins", sans-serif;
