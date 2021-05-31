@@ -50,4 +50,28 @@ export default {};
   text-decoration: none;
   color: white;
 }
+@media (max-width:767px){
+  .quotation-title {
+  font-size: 6.5vw;
+  padding: 2vw;
+}
+.quotation-texte {
+  width: 90vw;
+  font-size: 4vw;
+  line-height: 5vw;
+}
+.quotation-page_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6.5vw;
+  width: 50vw;
+  height: 10vw;
+  margin: 3vw;
+  border-radius: 2vw;
+  background: #fcacdf;
+  text-decoration: none;
+  color: white;
+}
+}
 </style>

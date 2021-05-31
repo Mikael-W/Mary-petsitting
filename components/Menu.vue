@@ -120,7 +120,7 @@ nav > ul li:hover .sub-tabs {
 .mobile-menu{
   position: fixed;
   bottom:0;
-  z-index: 98;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,6 +155,7 @@ nav > ul li:hover .sub-tabs {
 }
 .mobile-nav {
   position: fixed;
+  z-index: 99;
   width: 100vw;
   height: 100vh;
   background: white;

@@ -46,7 +46,7 @@ export default {
 }
 .services-title{
     font-size: 5vw;
-    padding: 10vh 0 0 0;
+    padding-top: 10vh;
     font-family: 'PumpkinStory', sans-serif;
     color:#FCACDF;
 }
@@ -84,5 +84,35 @@ export default {
     text-align: center;
     font-size: 1.8vw;
     font-family: "poppins", sans-serif;
+}
+@media (max-width:767px){
+   .tags-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+.tag-img{
+    width: 50vw;
+    height: 50vw;
+    margin-top: 5vh;
+}
+.tag-picture{
+    width: 30vw;
+}
+.tag-description{
+    width:90vw;
+    font-size: 4vw;
+}
+.services-subtitle{
+    padding:0;
+    font-size:3;
+}
+.services-title{
+    font-size: 6.5vw;
+    padding-top: 5vh;
+}
+.tag{
+  padding:0;
+}
 }
 </style>

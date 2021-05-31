@@ -106,4 +106,28 @@ h1 {
   font-style: italic;
   text-align: center;
 }
+@media (max-width: 767px){
+  .about {
+  display: flex;
+  flex-direction: column;
+}
+.about-picture_img {
+  width: 60vw;
+  margin-bottom: 5vw;
+}
+h1 {
+  font-size: 6.5vw;
+}
+.about-description_intro, .about-description_texte {
+  width: 85vw;
+  line-height: 3.5vh;
+  font-size: 4vw;
+  padding:0;
+}
+.about-description_suit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
 </style>

@@ -102,4 +102,29 @@ footer{
     width: 1.5vw;
     padding: 2vw 1vw;
 }
+@media (max-width:767px){
+    .footer-link_container{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0 20vw 0vw;
+}
+    .footer-title{
+    font-size: 6.5vw;
+    padding: 0 2vw;
+}
+    .footer-li{
+    font-size: 3vw;
+    text-align: center;
+    padding: 2vw 0 2vw 2vw;
+}
+    .social-links{
+    justify-content: center;
+    padding: 0 1vw;
+}
+    .social-icon{
+    width: 3vw;
+}
+}
 </style>

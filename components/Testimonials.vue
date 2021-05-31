@@ -7,8 +7,9 @@
     <button @click="prev()" type="button" class="btn btn-left">
       <img src="../assets/img/left-arrow.png" class="icone" alt="" />
     </button>
+    <div class="testimonial-container">
     <div
-      class="testimonials-container"
+      class="testimonial-slider"
       :style="{
         transform: `translateX(${index}vw)`,
         transition: `${transition}`,
@@ -110,6 +111,7 @@
         </p>
       </div>
     </div>
+    </div>
     <button @click="next()" type="button" class="btn btn-right">
       <img src="../assets/img/right-arrow.png" class="icone" alt="" />
     </button>
@@ -154,7 +156,7 @@ export default {
   margin: 5vh 0 2vh 0;
   overflow-x: hidden;
 }
-.testimonials-container {
+.testimonials-slider {
   display: flex;
   align-items: flex-start;
   width: 200vw;
@@ -240,5 +242,43 @@ export default {
 }
 .icone {
   width: 25px;
+}
+@media (max-width: 767px) {
+  .slide {
+  width: 80vw;
+  margin: 0;
+}
+.testimonial-slider {
+  display: flex;
+  align-items: flex-start;
+  width: 490vw;
+  transform: none;
+}
+.testimonial-container {
+  width:100vw;
+  overflow-x: scroll;
+
+}
+.btn{
+  display: none;
+}
+.testimonial-title{
+  font-size: 6.5vw;
+}
+.testimonial-subtitle{
+  font-size: 2.5vw;
+}
+.customer-picture {
+  width: 25vw;
+}
+.customer-name {
+  font-size: 5vw;
+  padding-bottom: 2vw;;
+}
+.customer-comment {
+  width: 70%;
+  text-align: center;
+  font-size: 3vw;
+}
 }
 </style>
