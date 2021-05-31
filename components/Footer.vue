@@ -12,8 +12,8 @@
       <div class="legals-links">
           <span class="footer-title">LIENS PRATIQUES</span>
       <ul>
-          <li class="footer-li">Lien 1</li>
-          <li class="footer-li">Lien 2</li>
+          <li class="footer-li"><a class="ref-link" href="https://chuv.oniris-nantes.fr/">CHUV ONIRIS</a></li>
+          <li class="footer-li"><a class="ref-link" href="https://chuv.oniris-nantes.fr/">CHVA ATLANTIA</a></li>
           <li class="footer-li">Mentions légales</li>
       </ul>
       </div>
@@ -102,6 +102,10 @@ footer{
     width: 1.5vw;
     padding: 2vw 1vw;
 }
+.ref-link{
+    text-decoration: none;
+    color:white;
+}
 @media (max-width:767px){
     .footer-link_container{
     width:100vw;
@@ -122,9 +126,27 @@ footer{
     .social-links{
     justify-content: center;
     padding: 0 1vw;
+    margin-bottom: 2vw;
 }
     .social-icon{
     width: 3vw;
+}
+.copyright{
+    position: absolute;
+    bottom:20vw;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0 2vw;
+    font-size: 2vw;
+}
+.author-link{
+    position: absolute;
+    bottom:18vw;
+    width: 100vw;
+    right: 0;
+    text-align: center;
+    font-size: 2vw;
 }
 }
 </style>

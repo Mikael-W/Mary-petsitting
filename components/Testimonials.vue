@@ -102,14 +102,6 @@
         </p>
         <span class="customer-name">Marie</span>
       </div>
-      <div class="slide">
-        <img src="../assets/img/photo.png" class="customer-picture" alt="" />
-        <span class="customer-name">Client 6</span>
-        <p class="customer-comment">
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio rem
-          corporis laudantium modi. Distinctio, voluptas!"
-        </p>
-      </div>
     </div>
     </div>
     <button @click="next()" type="button" class="btn btn-right">
@@ -156,7 +148,7 @@ export default {
   margin: 5vh 0 2vh 0;
   overflow-x: hidden;
 }
-.testimonials-slider {
+.testimonial-slider {
   display: flex;
   align-items: flex-start;
   width: 200vw;
@@ -190,7 +182,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30vw;
+  width: 29vw;
   margin: 0 2vw;
 }
 .customer-picture {
