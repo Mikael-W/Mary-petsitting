@@ -57,7 +57,20 @@ export default {
       displayMenu: false,
     };
   },
-  methods: {},
+  mounted() {
+    this.staggering()
+  },
+  methods: {
+    staggering() {
+      const gsap = this.$gsap
+      gsap.from('.link', {
+        opacity:0,
+        duration: 1,
+        x: 150,
+        stagger: 0.20,
+      })
+    }
+  }
 };
 </script>
 

@@ -29,7 +29,7 @@
         <span class="customer-name">Océane</span>
       </div>
       <div class="slide">
-        <img src="../assets/img/oreo.jpg" class="customer-picture" alt="" />
+        <img src="../assets/img/oreoetniobe.jpeg" class="customer-picture" alt="" />
         <span class="customer-name">Oréo & Niobé</span>
         <p class="customer-comment">
           "Pour mon petit voyage de 2 semaines en Malaisie, j'ai fait appel à
@@ -64,7 +64,7 @@
         <span class="customer-name">Frédéric & Carole</span>
       </div>
       <div class="slide">
-        <img src="../assets/img/ramzo.jpeg" class="customer-picture" alt="" />
+        <img src="../assets/img/razmoetpoussiere.jpeg" class="customer-picture" alt="" />
         <span class="customer-name">Razmo & Poussière</span>
         <p class="customer-comment">
           "On a fait appel deux fois à Mary pour garder nos deux chats. L’un a

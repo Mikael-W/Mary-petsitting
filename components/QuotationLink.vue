@@ -50,6 +50,9 @@ export default {};
   text-decoration: none;
   color: white;
 }
+.quotation-page_btn:hover{
+  transform: scale(1.1);
+}
 @media (max-width:767px){
   .quotation-section {
   height:60vw;

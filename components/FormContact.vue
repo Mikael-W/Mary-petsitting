@@ -62,13 +62,15 @@ input {
 .submit-btn{
   align-self: center;
   width: 25vw;
-  height: 2.5vw;
+  height: 4vw;
   background: #fcacdf;
-  font-size: 1.5vw;
+  font-size: 2vw;
   border-radius: 2rem;
   border-color: #fcacdf;
   font-family: "PumpkinStory", sans-serif;
   cursor: pointer;
+  margin: 2vw 0;
+  color: white;
 }
 textarea{
   min-height: 15vw;
@@ -76,6 +78,9 @@ textarea{
   overflow: auto;
   font-family: "poppins", sans-serif;
   font-size: 1.5vw;
+}
+.submit-btn:hover {
+  transform: scale(1.1);
 }
 @media (max-width:767px){
   .contact-section{

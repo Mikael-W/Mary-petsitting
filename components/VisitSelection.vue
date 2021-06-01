@@ -45,6 +45,9 @@ export default {
     width: 25vw;
     border-radius: 2rem;
 }
+.dog-visit:hover , .cat-visit:hover {
+    transform: scale(1.1);
+}
 @media (max-width:767px){
     .visit-selection_container{
     width: 100vw;

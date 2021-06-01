@@ -13,15 +13,14 @@ export default {
   target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'mary',
+    title: 'Mary-Petsitting | petsitter Nantes',
     htmlAttrs: {
       lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title:'Mary-Petsitting'},
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Votre pet sitter sur Nantes, je m occupe et prends soin de vos animaux pendant votre absence petsitting Nantes, garde animaux nantes, cat sitting Nantes, dog sitting nantes' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/mary_favicon.png' }
@@ -40,13 +39,16 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: ['nuxt-gsap-module'],
+
+  gsap: {
+    /* module options */
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxtjs/markdownit"],
   markdownit: {
-  injected: true
+    injected: true
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

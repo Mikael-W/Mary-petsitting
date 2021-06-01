@@ -10,7 +10,7 @@
     <a href="tel:+33610871438"><img class="header-icons" src="../assets/img/tel-iconP.png" alt=""></a>
     </div>
   </div>
-  <NuxtLink to="/"><img class="logo" src="../assets/img/logo.png" alt="Mary au service de vos animaux"></NuxtLink>
+  <NuxtLink to="/"><img v-gsap.from="{opacity:0, y: - 100, duration:1.5, ease:'elastic'}" class="logo" src="../assets/img/logo.png" alt="Mary au service de vos animaux"></NuxtLink>
   </div>
 </template>
 
