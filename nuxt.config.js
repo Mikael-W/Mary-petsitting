@@ -19,6 +19,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
+      { name:"google-site-verification", content:"rXRtQQRHYBAJiLFHOREZwe9UkvH3VghI8MSeaXNQ7Ew"},
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Votre pet sitter sur Nantes, je m occupe et prends soin de vos animaux pendant votre absence petsitting Nantes, garde animaux nantes, cat sitting Nantes, dog sitting nantes' }
     ],
