@@ -1,6 +1,7 @@
 <template>
    <div class="container">
-   <Menu />
+    <SpecialEvent />
+    <Menu />
     <Logo />
     <Header />
     <BlogArticles />

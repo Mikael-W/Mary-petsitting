@@ -58,7 +58,7 @@
           l’a de suite appréciée et le feeling est vite passé. De plus Mary est
           à l’écoute de nos besoins pour personnaliser au mieux ses services.
           Nous repartirons en toute tranquillité sachant que notre Pépère se
-          fera une joie de la retrouver. « Mary, Au service de vos animaux »
+          fera une joie de la retrouver. « Mary, Au service de vos animaux »
           c’est vraiment vrai ! On recommande !""
         </p>
         <span class="customer-name">Frédéric & Carole</span>

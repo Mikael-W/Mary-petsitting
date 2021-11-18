@@ -23,7 +23,7 @@ export default {
 <style>
 .logo{
   position: absolute;
-  top:9vh;
+  top:20vh;
   right: 1vw;
   width: 35vw;
   border-radius: 100%;;
@@ -40,11 +40,11 @@ export default {
   align-items: center;
   background: white;
   width: 100vw;
-  height: 15vw;
+  height: 20vw;
 }
   .logo{
   position: absolute;
-  top:0vh;
+  top:15vh;
   right:50%;
   transform: translateX(50%);
   width: 23vw;
