@@ -1,4 +1,4 @@
-# mary
+# mary-petsitting
 
 ## Build Setup
 
