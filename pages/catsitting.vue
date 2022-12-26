@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-      <SpecialEvent />
       <Menu />
       <Logo />
       <Header />

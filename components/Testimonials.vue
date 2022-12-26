@@ -122,19 +122,19 @@ export default {
     prev() {
       if (this.index === 0) {
         this.transition = "none";
-        this.index = -102;
+        this.index = -400;
       } else {
         this.transition = "transform 0.2s ease";
-        this.index += 34;
+        this.index += 100;
       }
     },
     next() {
-      if (this.index === -102) {
+      if (this.index === -400) {
         this.transition = "none";
         this.index = 0;
       } else {
         this.transition = "transform 0.2s ease";
-        this.index -= 34;
+        this.index -= 100;
       }
     },
   },
@@ -151,8 +151,8 @@ export default {
 .testimonial-slider {
   display: flex;
   align-items: flex-start;
-  width: 200vw;
-  height: 65vw;
+  width: 500vw;
+  height: 40vw;
   overflow-x: hidden;
 }
 .testimonial-title {
@@ -182,7 +182,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 29vw;
+  width: 100vw;
   margin: 0 2vw;
 }
 .customer-picture {
@@ -201,7 +201,7 @@ export default {
 .customer-comment {
   width: 70%;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   padding-top: 1vh;
   margin-bottom: 2vh;
   color: white;

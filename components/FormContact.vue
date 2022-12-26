@@ -1,22 +1,32 @@
 <template>
   <div class="contact-section">
     <span class="contact-title">Contactez moi</span>
-  <form class="contact-form" @submit.prevent="sendEmail">
+  <form v-if="sendPopUp === false" class="contact-form" @submit.prevent="sendEmail">
     <label>Nom</label>
     <input type="text" name="name" >
     <label>Email</label>
     <input type="email" name="email">
     <label>Message</label>
     <textarea name="message"></textarea>
-    <input class="submit-btn" type="submit" value="Envoyer">
+    <input class="submit-btn" type="submit" value="Envoyer" @click="sendPopUp = true">
   </form>
+    <div class="popUp" v-if="sendPopUp === true">
+      <span>Merci pour votre message, je vous réponds dans les plus brefs délais</span>
+      <span>Animalement Mary</span>
+    </div>
   </div>
+ 
 </template>
 
 <script>
 import emailjs from 'emailjs-com';
 
 export default {
+  data(){
+    return{
+      sendPopUp: false
+    }
+  },
   methods: {
     sendEmail: (e) => {
       emailjs.sendForm('service_mfbj83r', 'template_b71dtvt', e.target, 'user_5g6gsJ5PQOkbXRNYeKxbt')
@@ -45,10 +55,21 @@ export default {
   color: #fcacdf;
   padding: 2vw;
 }
-.contact-form{
+.contact-form, .popUp{
   display: flex;
   width: 35vw;
   flex-direction: column;
+}
+.popUp{
+  text-align: center;
+  justify-content: center;
+  width: 50vw;
+  height: 30vh;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+}
+span{
+  margin-block: 0.5rem;
 }
 label{
   font-family: "PumpkinStory", sans-serif;
